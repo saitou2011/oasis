@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+    <h:head>
+        <title>Oásis da Computação</title>
+        <meta name="author" content="The Author"></meta>
+    </h:head>
+    <!-- Add 50px padding top to the body for the navbar -->
+    <h:body style="padding-top: 50px; padding-bottom: 20px;">
+        <b:navBar brand="Oásis da Computação" brandHref="#"  fixed="top">
+            <b:navbarLinks>
+                <b:dropMenu value="Conteúdo">
+                    <b:navLink value="Python" href="#"></b:navLink>
+                    <b:navLink value="C" href="#"></b:navLink>
+                </b:dropMenu>
+            </b:navbarLinks>
+            <h:form styleClass="navbar-form navbar-right">
+                <div class="form-group">
+                    <b:inputText placeholder="Email" fieldSize="sm"/>
+                </div>
+                <div class="form-group">
+                    <b:inputText placeholder="Senha" fieldSize="sm"/>
+                </div> 
+                #{' '}
+                <b:commandButton action="a" value="Entrar" look="success" icon="chevron-right" iconAlign="right"/>
+                #{' '}#{' '}
+                <b:commandButton action="a" value="Cadastre-se" look="primary"/>
+            </h:form>
+        </b:navBar>
+        <b:jumbotron>
+            <b:container>
+                <h1>Oásis da Computação!</h1>
+                <p>Aprenda a programar de maneira fácil e divertida.
+                </p>
+            </b:container>
+        </b:jumbotron>
+        <b:container>
+            <b:row>
+                <b:column col-md="6">
+                    <img src="img/python.png" alt="Generic placeholder thumbnail"/>
+                    <h2>Python</h2>
+                    <p>Uma das linguagens de script mais populares ensinada de uma maneira irreverente.</p>
+                    <p><b:button outcome="" look="info" value="Começar"/></p>
+                </b:column>
+                <b:column col-md="6">
+                    <img src="img/c.png" alt="Generic placeholder thumbnail"/>
+                    <h2>C</h2>
+                    <p>Nunca mais arranque os cabelos com ponteiros.</p>
+                    <p><b:button outcome="" look="info" value="Começar"/></p>
+                </b:column>
+            </b:row>
+            <hr/>
+            <footer>
+            <p>© Oásis da Computação 2014</p>
+            </footer>
+        </b:container>
+    </h:body>
+</html>
